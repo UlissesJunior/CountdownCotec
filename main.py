@@ -8,11 +8,16 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+CONSUMER_KEY = os.environ["CONSUMER_KEY"]
+CONSUMER_SECRET = os.environ["CONSUMER_SECRET"]
+ACCESS_TOKEN = os.environ["ACCESS_TOKEN"]
+ACCESS_TOKEN_SECRET = os.environ["ACCESS_TOKEN_SECRET"]
+
 api = tweepy.Client(
-    consumer_key= os.getenv("CONSUMER_KEY"),
-    consumer_secret=  os.getenv("CONSUMER_SECRET"),
-    access_token= os.getenv("ACCESS_TOKEN"),
-    access_token_secret= os.getenv("ACCESS_TOKEN_SECRET")
+    consumer_key= CONSUMER_KEY or os.getenv("CONSUMER_KEY"),
+    consumer_secret=  CONSUMER_SECRET or os.getenv("CONSUMER_SECRET"),
+    access_token= ACCESS_TOKEN or os.getenv("ACCESS_TOKEN"),
+    access_token_secret= ACCESS_TOKEN_SECRET or os.getenv("ACCESS_TOKEN_SECRET")
 )
 
 x = time.localtime()
