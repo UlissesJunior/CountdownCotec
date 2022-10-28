@@ -27,3 +27,5 @@ Para o desenvolvimento deste aplicativo, utilizei as seguintes tecnologias:
 <h2>Objetivo do projeto</h2>
 
 Este projeto tem o objetivo de ser um contador de dias para o fim do ano letivo no Colégio Técnico Industrial de Guaratinguetá - UNESP.
+
+[![run main.py](https://github.com/UlissesJunior/CountdownCotec/actions/workflows/actions.yml/badge.svg?branch=main)](https://github.com/UlissesJunior/CountdownCotec/actions/workflows/actions.yml)
