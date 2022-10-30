@@ -23,7 +23,7 @@ jobs:
           pip install python-dotenv
           pip install tweepy
           
-      - name: execute py script # run main.py
+      - name: execute py script
         env:
           CONSUMER_KEY: ${{ secrets.CONSUMER_KEY }}
           CONSUMER_SECRET: ${{ secrets.CONSUMER_SECRET }}
